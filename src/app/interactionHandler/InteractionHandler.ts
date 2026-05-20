@@ -481,7 +481,7 @@ export abstract class InteractionHandler {
                     let pressure = 1;
                     if (action === MotionEvent.ACTION_UP) {
                         pressure = 0;
-                    } else if (typeof touch.force === 'number') {
+                    } else if (typeof touch.force === 'number' && touch.force > 0) {
                         pressure = touch.force;
                     }
                     if (!invalid) {
