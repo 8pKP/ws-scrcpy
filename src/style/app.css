@@ -115,6 +115,7 @@ body.stream {
 .touch-layer {
     position: absolute;
     z-index: 1;
+    touch-action: none;
 }
 
 .video {
